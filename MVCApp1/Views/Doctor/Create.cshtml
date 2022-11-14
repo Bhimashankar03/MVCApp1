@@ -1,0 +1,28 @@
+﻿@model Doctor
+<html>
+	<head>
+		<title></title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	</head>
+	<body>
+		
+		
+		@*<form method="post" asp-action="Create" asp-controller="Doctor">*@
+	<div class="row">
+		<form method="post" asp-action="Create" asp-controller="Doctor">
+		<div class="col-md-6 offset-3">
+
+			<div class="form-group">Id :<input type="text" asp-for="@Model.Id" class="form-control"/><br /></div>
+
+				<div class="form-group">Name :<input type="text" asp-for="@Model.Name" class="form-control" /><br />	</div>
+			
+		<div class="form-group">Qualification :<input type="text" asp-for="@Model.Qualification"  class="form-control"/><br /></div>
+			
+			
+		<div class="form-group"><button class="btn btn-primary">Submit</button></div>
+				</div>
+		</form>
+			</div>
+	
+	</body>
+</html>
